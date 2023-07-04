@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: myimage-deployment
   labels:
-    app: nginx
+    app: myimage
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: myimage
   template:
     metadata:
       labels:
-        app: nginx
+        app: myimage
     spec:
       containers:
-        - name: nginx
-          image: nginx:1.14.2
+        - name: myimage
+          image: docker.io/psoftg/myimage:1.0.0 # {"$imagepolicy": "flux-system:myimage"}
           ports:
             - containerPort: 80

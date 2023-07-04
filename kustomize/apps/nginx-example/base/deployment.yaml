@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:1.14.2
+          image: docker.io/psoftg/myimage:1.0.0
           ports:
             - containerPort: 80

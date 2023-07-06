@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: myimage
-          image: docker.io/psoftg/myimage:1.0.4 # {"$imagepolicy": "flux-system:flux-app"}
+          image: docker.io/psoftg/myimage:1.0.5 # {"$imagepolicy": "flux-system:flux-app"}
           ports:
             - containerPort: 80
